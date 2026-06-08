@@ -21,24 +21,24 @@
         }
         
         header {
-            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), 
-                        url('images/kuXym.jpg') no-repeat center center/cover;
-            color: white;
+            background: white;
+            color: black;
             text-align: center;
-            padding: 160px 20px 120px;
-            background-position: center;
-            background-size: cover;
+            padding: 140px 20px 100px;
+            border-bottom: 4px solid var(--red);
         }
         
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3.8rem;
+            font-size: 4rem;
             margin: 0 0 10px 0;
+            color: #1D3557;
         }
         
         .hero .tagline {
-            font-size: 2.1rem;
+            font-size: 2.2rem;
             margin: 10px 0 30px;
+            color: #333;
         }
         
         .cta-button {
@@ -51,7 +51,7 @@
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin: 10px;
+            margin: 12px;
         }
         
         section {
@@ -86,18 +86,18 @@
         }
         
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.6rem; }
-            .hero .tagline { font-size: 1.5rem; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero .tagline { font-size: 1.6rem; }
         }
     </style>
 </head>
 <body>
-    <!-- HERO SECTION with your photo -->
+    <!-- HERO SECTION - White Background + Black Text -->
     <header class="hero">
         <div>
             <h1>APRENDE ESPAÑOL</h1>
             <p class="tagline">스페인어를 배우는 것은 재미있어요!</p>
-            <p style="font-size: 1.45rem; max-width: 720px; margin: 0 auto 40px;">
+            <p style="font-size: 1.5rem; max-width: 720px; margin: 0 auto 40px;">
                 서울 원어민 강사와 함께<br>
                 왕초보 From Zero → 실전 회화 &amp; DELE까지
             </p>
@@ -105,7 +105,7 @@
             <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" target="_blank">
                 무료 30분 상담 예약하기 →
             </a>
-            <a href="#programs" class="cta-button" style="background: white; color: var(--red);">
+            <a href="#programs" class="cta-button" style="background: white; color: var(--red); border: 2px solid var(--red);">
                 프로그램 보기
             </a>
         </div>
@@ -116,7 +116,7 @@
         <div class="grid">
             <div class="card">
                 <h3>누구를 위한 수업인가요?</h3>
-                <p>초등학생부터 고등학생, 대학생, 성인까지<br>모든 연령 환영</p>
+                <p>초등학생부터 고등학생, 대학생, 성인까지 모든 연령 환영</p>
             </div>
             <div class="card">
                 <h3>수업 형태</h3>
