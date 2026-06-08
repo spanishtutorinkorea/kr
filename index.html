@@ -8,8 +8,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Playfair+Display:wght@700&display=swap');
         
         :root {
-            --red: #E63946;
-            --blue: #1D3557;
+            --yellow: #FFCD00;   /* Bright yellow from your screenshot */
+            --blue: #1D3557;     /* Deep blue from your screenshot */
         }
         
         body {
@@ -21,28 +21,27 @@
         }
         
         header {
-            background: white;
-            color: black;
+            background: var(--yellow);
+            color: var(--blue);
             text-align: center;
-            padding: 140px 20px 100px;
-            border-bottom: 4px solid var(--red);
+            padding: 160px 20px 120px;
         }
         
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            margin: 0 0 10px 0;
-            color: #1D3557;
+            font-size: 4.2rem;
+            margin: 0 0 15px 0;
+            color: var(--blue);
         }
         
         .hero .tagline {
             font-size: 2.2rem;
-            margin: 10px 0 30px;
-            color: #333;
+            margin: 10px 0 35px;
+            color: var(--blue);
         }
         
         .cta-button {
-            background: var(--red);
+            background: var(--blue);
             color: white;
             padding: 18px 45px;
             font-size: 1.35rem;
@@ -86,18 +85,18 @@
         }
         
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.8rem; }
+            .hero h1 { font-size: 2.9rem; }
             .hero .tagline { font-size: 1.6rem; }
         }
     </style>
 </head>
 <body>
-    <!-- HERO SECTION - White Background + Black Text -->
+    <!-- HERO SECTION - Yellow Background + Blue Text -->
     <header class="hero">
         <div>
             <h1>APRENDE ESPAÑOL</h1>
             <p class="tagline">스페인어를 배우는 것은 재미있어요!</p>
-            <p style="font-size: 1.5rem; max-width: 720px; margin: 0 auto 40px;">
+            <p style="font-size: 1.5rem; max-width: 720px; margin: 0 auto 40px; color: var(--blue);">
                 서울 원어민 강사와 함께<br>
                 왕초보 From Zero → 실전 회화 &amp; DELE까지
             </p>
@@ -105,7 +104,7 @@
             <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" target="_blank">
                 무료 30분 상담 예약하기 →
             </a>
-            <a href="#programs" class="cta-button" style="background: white; color: var(--red); border: 2px solid var(--red);">
+            <a href="#programs" class="cta-button" style="background: white; color: var(--blue); border: 3px solid var(--blue);">
                 프로그램 보기
             </a>
         </div>
@@ -149,7 +148,7 @@
 
     <section style="background: var(--blue); color: white; text-align: center;">
         <h2 style="font-size: 2.4rem;">지금 시작하세요</h2>
-        <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" style="background: white; color: var(--red); font-size: 1.5rem;" target="_blank">
+        <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" style="background: white; color: var(--blue); font-size: 1.5rem;" target="_blank">
             30분 무료 상담 예약하기
         </a>
     </section>
