@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Tutor in Korea | 스페인어 원어민 강사</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --red: #E63946;
+            --blue: #1D3557;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x600/1D3557/E63946?text=Español+Aprende+Korea') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px 80px;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+        }
+        
+        .hero .tagline {
+            font-size: 1.8rem;
+            margin: 10px 0 30px;
+        }
+        
+        .cta-button {
+            background: var(--red);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .programs {
+            background: #f8f8f8;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        footer {
+            background: var(--blue);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .bilingual {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero .tagline { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div>
+            <h1>APRENDE ESPAÑOL</h1>
+            <p class="tagline">스페인어를 배우는 것은 재미있어요!</p>
+            <p style="font-size: 1.4rem; max-width: 700px; margin: 0 auto 40px;">서울에서 스페인어 원어민 강사와 함께<br>초보자부터 시작하세요</p>
+            
+            <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" target="_blank">무료 상담 예약하기</a>
+            <a href="#programs" class="cta-button" style="background: white; color: var(--red);">프로그램 보기</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 style="text-align: center; font-size: 2.5rem; color: var(--blue);">안녕하세요!</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>누구를 위한 수업인가요?</h3>
+                <p>초등학생부터 고등학생, 대학생, 성인까지 모든 연령 환영</p>
+            </div>
+            <div class="card">
+                <h3>수업 형태</h3>
+                <p>대면 / 온라인 / 하이브리드<br>개별 맞춤 수업</p>
+            </div>
+            <div class="card">
+                <h3>커리큘럼</h3>
+                <p>언어 입문 • 회화 • 시험 준비 (DELE 등)<br>From Zero 프로그램 (학생 피드백 반영)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs">
+        <h2 style="text-align: center; font-size: 2.5rem;">Our Programs</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>From Zero</h3>
+                <p>완전 초보자를 위한 3-6개월 집중 프로그램<br>기초 문법 + 발음 + 일상 회화</p>
+                <strong>학생 피드백으로 지속 업데이트</strong>
+            </div>
+            <div class="card">
+                <h3>Conversational Spanish</h3>
+                <p>자연스러운 대화 중심<br>스페인 & 라틴아메리카 문화 체험</p>
+            </div>
+            <div class="card">
+                <h3>Exam & Business</h3>
+                <p>DELE 시험 준비 • 비즈니스 스페인어</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--blue); color: white; text-align: center;">
+        <h2>지금 시작하세요</h2>
+        <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" style="background: white; color: var(--red); font-size: 1.5rem;" target="_blank">30분 무료 상담 예약</a>
+    </section>
+
+    <footer>
+        <p><strong>Contact:</strong> <a href="mailto:spanishtutorinkorea@gmail.com" style="color: white;">spanishtutorinkorea@gmail.com</a></p>
+        <p>Calendly: <a href="https://calendly.com/spanishtutor-kakao/30min" style="color: white;" target="_blank">https://calendly.com/spanishtutor-kakao/30min</a></p>
+        <p>&copy; 2026 Spanish Tutor in Korea. 서울 기반 스페인어 교육</p>
+        <p style="margin-top: 20px; font-size: 0.9rem;">이 사이트는 GitHub Pages로 무료 호스팅됩니다. Flyer QR 코드로 연결 가능</p>
+    </footer>
+</body>
+</html>
