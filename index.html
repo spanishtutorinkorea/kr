@@ -3,162 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spanish Tutor in Korea | 스페인어 원어민 강사</title>
+    <title>Spanish Tutor in Korea | 왕초보 From Zero</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Playfair+Display:wght@700&display=swap');
         
         :root {
             --yellow: #FFCD00;
             --blue: #1D3557;
+            --red: #E63946;
         }
         
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
+        body { font-family: 'Noto Sans KR', sans-serif; margin:0; padding:0; color:#333; line-height:1.6; }
+        header { background: var(--yellow); color: var(--blue); text-align:center; padding:140px 20px 90px; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size:4.3rem; margin:0 0 15px; }
+        .hero .tagline { font-size:2.1rem; margin:10px 0 30px; }
+        
+        .nav { background: var(--blue); padding:15px 0; position: sticky; top:0; z-index:100; text-align:center; }
+        .nav a { color:white; margin:0 18px; text-decoration:none; font-weight:500; }
+        
+        section { padding:70px 20px; max-width:1200px; margin:0 auto; }
+        .section-title { text-align:center; font-size:2.6rem; color:var(--blue); margin-bottom:40px; }
+        
+        .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:30px; }
+        .card { background:white; border-radius:12px; padding:35px; box-shadow:0 4px 20px rgba(0,0,0,0.1); text-align:center; }
+        
+        .cta-button { 
+            background:var(--red); color:white; padding:18px 45px; font-size:1.35rem; 
+            border:none; border-radius:50px; cursor:pointer; text-decoration:none; display:inline-block; margin:12px;
         }
         
-        header {
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
-                        url('kuXym.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 160px 20px 120px;
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4.5rem;
-            margin: 0 0 15px 0;
-            color: white;
-        }
-        
-        .hero .tagline {
-            font-size: 2.2rem;
-            margin: 10px 0 35px;
-            color: white;
-        }
-        
-        .cta-button {
-            background: var(--blue);
-            color: white;
-            padding: 18px 45px;
-            font-size: 1.35rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin: 12px;
-        }
-        
-        section {
-            padding: 70px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .programs {
-            background: #f8f8f8;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 35px 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        footer {
-            background: var(--blue);
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.9rem; }
-            .hero .tagline { font-size: 1.6rem; }
-        }
+        footer { background:var(--blue); color:white; text-align:center; padding:60px 20px; }
     </style>
 </head>
 <body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#packages">패키지</a>
+        <a href="#mailclub">Mail Club</a>
+        <a href="#reviews">후기</a>
+        <a href="#booking">무료 상담</a>
+    </nav>
+
+    <!-- HERO -->
     <header class="hero">
-        <div>
-            <h1>APRENDE ESPAÑOL</h1>
-            <p class="tagline">스페인어를 배우는 것은 재미있어요!</p>
-            <p style="font-size: 1.55rem; max-width: 720px; margin: 0 auto 40px;">
-                서울 원어민 강사와 함께<br>
-                왕초보 From Zero → 실전 회화 &amp; DELE까지
-            </p>
-            
-            <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" target="_blank">
-                무료 30분 상담 예약하기 →
-            </a>
-            <a href="#programs" class="cta-button" style="background: white; color: var(--blue); border: 3px solid var(--blue);">
-                프로그램 보기
-            </a>
-        </div>
+        <h1>APRENDE ESPAÑOL</h1>
+        <p class="tagline">스페인어를 배우는 것은 재미있어요!</p>
+        <p style="font-size:1.5rem; max-width:720px; margin:0 auto 30px;">
+            서울 원어민 강사와 함께<br>왕초보 From Zero → 실전 회화 & DELE까지
+        </p>
+        <a href="#booking" class="cta-button">무료 30분 상담 예약하기 →</a>
     </header>
 
-    <section id="about">
-        <h2 style="text-align: center; font-size: 2.6rem; color: var(--blue);">안녕하세요!</h2>
+    <!-- SHORT "WHO IS THIS FOR" -->
+    <section style="background:#f8f8f8;">
+        <h2 class="section-title" style="margin-bottom:20px;">누구를 위한 수업인가요?</h2>
+        <p style="text-align:center; font-size:1.35rem; max-width:700px; margin:0 auto;">
+            초등학생 ~ 성인까지 모든 연령<br>
+            완전 초보자도 환영합니다
+        </p>
+    </section>
+
+    <!-- EVENT PACKAGE - FIRST MAJOR SECTION -->
+    <section id="packages">
+        <h2 class="section-title">왕초보 끝장 패키지</h2>
         <div class="grid">
             <div class="card">
-                <h3>누구를 위한 수업인가요?</h3>
-                <p>초등학생부터 고등학생, 대학생, 성인까지 모든 연령 환영</p>
+                <h3>From Zero Basic</h3>
+                <p>3개월 집중<br>발음 + 기초 + 일상 회화</p>
+                <a href="#booking" class="cta-button">신청하기</a>
             </div>
             <div class="card">
-                <h3>수업 형태</h3>
-                <p>대면 / 온라인 / 하이브리드<br>개별 맞춤 수업</p>
+                <h3>Conversation Master</h3>
+                <p>6개월 풀 패키지<br>실전 대화 + 문화</p>
+                <strong style="color:var(--red);">가장 인기!</strong>
+                <a href="#booking" class="cta-button">신청하기</a>
             </div>
             <div class="card">
-                <h3>From Zero 프로그램</h3>
-                <p>완전 초보자도 빠르게 시작<br>학생 피드백으로 지속 업데이트</p>
+                <h3>DELE Exam Ready</h3>
+                <p>시험 완전 대비</p>
+                <a href="#booking" class="cta-button">신청하기</a>
             </div>
         </div>
     </section>
 
-    <section id="programs" class="programs">
-        <h2 style="text-align: center; font-size: 2.6rem; color: var(--blue);">Our Programs</h2>
+    <!-- TESTIMONIALS + MAIL CLUB INTRODUCTION -->
+    <section id="reviews" style="background:#f8f8f8;">
+        <h2 class="section-title">학생들의 후기</h2>
         <div class="grid">
             <div class="card">
-                <h3>왕초보 From Zero</h3>
-                <p>3~6개월 집중 프로그램<br>발음·기초·일상 회화</p>
+                <p>"From Zero 패키지 덕분에 자신감이 생겼어요!"</p>
+                <p><strong>— 대학생 김○○</strong></p>
             </div>
             <div class="card">
-                <h3>실전 회화</h3>
-                <p>자연스러운 대화 중심<br>스페인 & 라틴 문화 체험</p>
+                <p>"매달 오는 Mail Club 자료가 정말 좋아요. 꾸준히 공부하게 됩니다."</p>
+                <p><strong>— 직장인 이○○</strong></p>
+            </div>
+        </div>
+        
+        <h3 style="text-align:center; margin-top:50px;">Spanish Mail Club</h3>
+        <p style="text-align:center; font-size:1.3rem;">매월 집으로 배송되는 학습 키트 + 피드백</p>
+        <div style="text-align:center; margin-top:30px;">
+            <a href="#mailclub" class="cta-button">Mail Club 구독하기</a>
+        </div>
+    </section>
+
+    <!-- MAIL CLUB -->
+    <section id="mailclub">
+        <h2 class="section-title">Spanish Mail Club</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Starter</h3>
+                <p>월 29,000원<br>교재 + MP3 + 문화 자료</p>
+                <a href="#booking" class="cta-button">구독 시작</a>
             </div>
             <div class="card">
-                <h3>DELE / 시험 준비</h3>
-                <p>공식 시험 대비<br>비즈니스 스페인어도 가능</p>
+                <h3>Premium</h3>
+                <p>월 49,000원<br>교재 + 녹음 피드백 + Zoom</p>
+                <strong>Best Value</strong>
+                <a href="#booking" class="cta-button">구독 시작</a>
             </div>
         </div>
     </section>
 
-    <section style="background: var(--blue); color: white; text-align: center;">
-        <h2 style="font-size: 2.4rem;">지금 시작하세요</h2>
-        <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" style="background: white; color: var(--blue); font-size: 1.5rem;" target="_blank">
-            30분 무료 상담 예약하기
+    <!-- BOOKING REMINDER 2 -->
+    <section style="background:var(--blue); color:white; text-align:center;">
+        <h2 style="font-size:2.6rem;">지금 무료 상담 받고 시작하세요</h2>
+        <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" target="_blank" style="background:white; color:var(--blue); font-size:1.6rem;">
+            📅 30분 무료 상담 예약하기
+        </a>
+    </section>
+
+    <!-- BOOKING REMINDER 3 -->
+    <section id="booking" style="text-align:center; padding:60px 20px;">
+        <h2 style="font-size:2.4rem; color:var(--blue);">아직 망설이시나요?</h2>
+        <p style="font-size:1.3rem;">30분만 투자하면 당신에게 맞는 레벨과 계획을 알려드립니다</p>
+        <a href="https://calendly.com/spanishtutor-kakao/30min" class="cta-button" target="_blank">
+            지금 바로 예약하기 →
         </a>
     </section>
 
     <footer>
-        <p><strong>Email:</strong> <a href="mailto:spanishtutorinkorea@gmail.com" style="color: white;">spanishtutorinkorea@gmail.com</a></p>
-        <p><strong>Calendly:</strong> <a href="https://calendly.com/spanishtutor-kakao/30min" style="color: white;" target="_blank">30분 무료 상담</a></p>
-        <p>&copy; 2026 Spanish Tutor in Korea • 서울 기반 원어민 수업</p>
+        <p><strong>Email:</strong> spanishtutorinkorea@gmail.com</p>
+        <p>&copy; 2026 Spanish Tutor in Korea</p>
     </footer>
 </body>
 </html>
